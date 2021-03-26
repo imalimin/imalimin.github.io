@@ -96,6 +96,7 @@
 			function loadTemplate(json) {
 				$.get("./assets/default_red.bin", function( templateStr, status) {
 					var privacy = getQueryString("privacy");
+					console.log(privacy);
 					if (privacy == "private") {
 						loadPrivateTemplate(templateStr, json);
 					} else {
