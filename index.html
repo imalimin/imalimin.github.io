@@ -100,7 +100,7 @@
 					var privacy = getQueryString("privacy");
 					if (privacy == "private") {
 						var info = JSON.parse(Base64.decode(getQueryString("info")));
-						console.log(info);
+						json.info = info;
 						loadPrivateTemplate(templateStr, json);
 					} else {
 						loadPublicTemplate(templateStr, json);
