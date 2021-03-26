@@ -82,6 +82,7 @@
 			function show(templateStr, json) {
 				var converter = new showdown.Converter();
 				var html = converter.makeHtml(template(templateStr, json));
+				$('#content').html(html);
 			}
 			function loadPublicTemplate(templateStr, json) {
 				$.get("./extra_alimin.md", function(text, status) {
@@ -96,7 +97,6 @@
 			function loadTemplate(json) {
 				$.get("./assets/default_red.bin", function( templateStr, status) {
 					var privacy = getQueryString("privacy");
-					console.log(privacy);
 					if (privacy == "private") {
 						loadPrivateTemplate(templateStr, json);
 					} else {
