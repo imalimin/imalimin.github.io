@@ -101,8 +101,12 @@
 					if (privacy == "private") {
 						var infoStr = getQueryString("info");
 						if (null != infoStr) {
-							var info = JSON.parse(Base64.decode(infoStr));
-							json.info = info;
+							try {
+								var info = JSON.parse(Base64.decode(infoStr));
+								json.info = info;
+							} catch(err) {
+								// Ignore.
+							}
 						}
 						loadPrivateTemplate(templateStr, json);
 					} else {
