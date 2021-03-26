@@ -79,32 +79,33 @@
 				}
 				return null;
 			}
-			function loadPublicTemplate(templateStr) {
+			function show(templateStr, json) {
+				var converter = new showdown.Converter();
+				var html = converter.makeHtml(template(templateStr, json));
+			}
+			function loadPublicTemplate(templateStr, json) {
 				$.get("./extra_alimin.md", function(text, status) {
-					loadTemplate(templateStr + "\n" + text);
+					show(templateStr + "\n" + text, json);
 				});
 			}
-			function loadPrivateTemplate(templateStr) {
+			function loadPrivateTemplate(templateStr, json) {
 				$.get("./assets/default_red_honor.bin", function(text, status) {
-					loadTemplate(templateStr + "\n" + text);
+					show(templateStr + "\n" + text, json);
 				});
 			}
-			function loadTemplate(templateStr) {
-				$.get("./bin/alimin.json", function(json, status) {
-					var converter = new showdown.Converter();
-					var html = converter.makeHtml(template(templateStr, json));
-					$('#content').html(html);
-				}, "json");
+			function loadTemplate(json) {
+				$.get("./assets/default_red.bin", function( templateStr, status) {
+					var privacy = getQueryString("privacy");
+					if (privacy == "private") {
+						loadPrivateTemplate(templateStr, json);
+					} else {
+						loadPublicTemplate(templateStr, json);
+					});
 			}
-			$.get("./assets/default_red.bin", function( templateStr, status) {
-				var privacy = getQueryString("privacy");
-				console.log(privacy);
-				if (privacy == "private") {
-					loadPrivateTemplate(templateStr);
-				} else {
-					loadPublicTemplate(templateStr);
-				}
-			});
+
+			$.get("./bin/alimin.json", function(json, status) {
+				loadTemplate(json);
+			}, "json");
 		</script>
 	</body>
 </html>
