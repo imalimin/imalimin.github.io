@@ -1,0 +1,8 @@
+## <span class="block-accent">05.</span><span class="title"><u>获奖情况</u></span>
+<table>
+	<%for(var i = 0; i < honors.length; i++) {%>
+	<tr>
+		<td class="title-1-120" valign="top"><%:=honors[i].time%></td><td class="title-1"><%:=honors[i].honor%></td>
+	</tr>
+    <%}%>
+</table>

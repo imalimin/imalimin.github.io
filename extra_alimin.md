@@ -1,0 +1,25 @@
+## <span class="block-accent">05.</span><span class="title"><u>Blog</u></span>  
+[<span class="title-1">高仿剪映视频多轨剪辑页实现</span>](https://www.jianshu.com/p/1146f496398f)   
+[<span class="title-1">「Skia」1. 使用CMake交叉编译Skia</span>](https://www.jianshu.com/p/b1661ed45f09)   
+[<span class="title-1">五分钟学会如何利用矩阵进行平面坐标系转换</span>](https://www.jianshu.com/p/b127d78b9cbf)   
+[<span class="title-1">五分钟用C++11实现Android系统的Handler机制</span>](https://www.jianshu.com/p/ad3172eb3c4d)   
+[<span class="title-1">一种基于广播的模块化架构简单实现</span>](https://www.jianshu.com/p/a8c18778ea4d)   
+[<span class="title-1">史上全最的WAV格式详解</span>](https://www.jianshu.com/p/b7cadd3e9c4d)   
+[<span class="title-1">你真的会用JNI吗？这些小技巧99%的人都不知道</span>](https://www.jianshu.com/p/6c7480cf19e2)   
+[<span class="title-1">PBO是OpenGL最高效的像素拷贝方式吗？</span>](https://www.jianshu.com/p/3be97e897531)   
+[<span class="title-1">memcpy速度太慢？掌握这个技术让内存拷贝效率成倍提升</span>](https://www.jianshu.com/p/e589604b8ce7)   
+[<span class="title-1">五分钟实现Android超漂亮的刻度轮播控件</span>](https://www.jianshu.com/p/437abf49bf7f)   
+[<span class="title-1">Android实现任意分辨率视频编码的思考与实现</span>](https://www.jianshu.com/p/c9299ab9f28a) 
+### 音视频
+[<span class="title-1">X264实现H264编码以及MediaMuxer的另类用法「第八章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/9654ef14eb6e)   
+[<span class="title-1">在Linux下编译Android版X264「第七章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/084d650d9a67)   
+[<span class="title-1">使用MediaMuxer对音视频进行混合封装「第六章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/699d2fd9dccc)   
+[<span class="title-1">使用MediaCodec编码AAC音频数据「第五章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/147b4be60140)   
+[<span class="title-1">使用MediaCodec实现H264编码「第四章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/c0a9182349d1)   
+[<span class="title-1">使用OpenGL为Camera添加各种滤镜「第三章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/245ba9e52876)   
+[<span class="title-1">使用TextureView渲染Camera画面「第二章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/21cd8eb11686)   
+[<span class="title-1">使用SurfaceTexture作为Camera输出「第一章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/54642228fd9c)   
+[<span class="title-1">序章「Android音视频编码那点破事」</span>](https://www.jianshu.com/p/aac2f8699735) 
+
+### 公众号
+![公众号](./images/qrcode_wechat.jpg "公众号")
