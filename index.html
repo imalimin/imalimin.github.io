@@ -6,6 +6,7 @@
 		<script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="./showdown.min.js"></script>
 		<script type="text/javascript" src="./template.js"></script>
+		<script type="text/javascript" src="./base64.min.js"></script>
 		<style type="text/css">
 		body {
 			text-align: center;
@@ -99,7 +100,7 @@
 					var privacy = getQueryString("privacy");
 					if (privacy == "private") {
 						var info = getQueryString("info");
-						console.log(info);
+						console.log(Base64.decode(info));
 						loadPrivateTemplate(templateStr, json);
 					} else {
 						loadPublicTemplate(templateStr, json);
