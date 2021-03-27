@@ -84,6 +84,9 @@
 				}
 				return null;
 			}
+			function showErr() {
+				$('#content').html("Input your resume as json & encode by base64. example: imalimin.github.io/resume?resume=eyJpbmZvIjp7Im5hbWUiOiAiQWxpbWluIn19");
+			}
 			function show(templateStr, json) {
 				var converter = new showdown.Converter();
 				var html = converter.makeHtml(template(templateStr, json));
@@ -101,8 +104,10 @@
 					var resume = JSON.parse(Base64.decode(resumeStr));
 					loadTemplate("./assets/default_red.bin", resume);
 				} catch(err) {
-					// Ignore.
+					showErr();
 				}
+			} else {
+				showErr();
 			}
 		</script>
 	</body>
