@@ -99,8 +99,8 @@
 					show(templateStr + "\n" + text, json);
 				});
 			}
-			function loadTemplate(json) {
-				$.get("./assets/default_red.bin", function( templateStr, status) {
+			function loadTemplate(templateUrl, json) {
+				$.get(templateUrl, function( templateStr, status) {
 					var privacy = getQueryString("privacy");
 					if (privacy == "private") {
 						var infoStr = getQueryString("info");
@@ -119,8 +119,13 @@
 				});
 			}
 
-			$.get("./bin/alimin.json", function(json, status) {
-				loadTemplate(json);
+			var dataUrl = "./bin/alimin_public.json";
+			var privacy = getQueryString("privacy");
+			if ("private" == privacy) {
+				dataUrl = "./bin/alimin_private.json";
+			}
+			$.get(dataUrl, function(json, status) {
+				loadTemplate("./assets/default_red.bin", json);
 			}, "json");
 		</script>
 	</body>
