@@ -18,7 +18,7 @@
 [<span class="title-1">使用OpenGL为Camera添加各种滤镜「第三章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/245ba9e52876)   
 [<span class="title-1">使用TextureView渲染Camera画面「第二章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/21cd8eb11686)   
 [<span class="title-1">使用SurfaceTexture作为Camera输出「第一章，Android音视频编码那点破事」</span>](https://www.jianshu.com/p/54642228fd9c)   
-[<span class="title-1">序章「Android音视频编码那点破事」</span>](https://www.jianshu.com/p/aac2f8699735) 
+[<span class="title-1">序章「Android音视频编码那点破事」</span>](https://h5e7e2atp1.feishu.cn/docs/doccnyFGkA0TCJ6Pm0ayM1is4Ah) 
 
 ### 公众号
 ![公众号](./images/qrcode_wechat.jpg "公众号")
