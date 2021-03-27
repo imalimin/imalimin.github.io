@@ -94,38 +94,14 @@
 					show(templateStr + "\n" + text, json);
 				});
 			}
-			function loadPrivateTemplate(templateStr, json) {
-				$.get("./assets/default_red_honor.bin", function(text, status) {
-					show(templateStr + "\n" + text, json);
-				});
-			}
 			function loadTemplate(templateUrl, json) {
 				$.get(templateUrl, function( templateStr, status) {
-					var privacy = getQueryString("privacy");
-					if (privacy == "private") {
-						var infoStr = getQueryString("info");
-						if (null != infoStr) {
-							try {
-								var info = JSON.parse(Base64.decode(infoStr));
-								json.info = info;
-							} catch(err) {
-								// Ignore.
-							}
-						}
-						loadPrivateTemplate(templateStr, json);
-					} else {
-						loadPublicTemplate(templateStr, json);
-					}
+					loadPublicTemplate(templateStr, json);
 				});
 			}
 
-			var dataUrl = "./bin/alimin_public.json";
-			var privacy = getQueryString("privacy");
-			if ("private" == privacy) {
-				dataUrl = "./bin/alimin_private.json";
-			}
-			$.get(dataUrl, function(json, status) {
-				loadTemplate("./assets/default_red.bin", json);
+			$.get("./bin/alimin_public.json", function(json, status) {
+				loadTemplate("./assets/homepage.bin", json);
 			}, "json");
 		</script>
 	</body>
