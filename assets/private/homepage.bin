@@ -47,16 +47,4 @@
 </table>
 
 
-## <span class="block-accent">04.</span><span class="title"><u>项目经历</u></span>
-<table>
-	<%for(var i = 0; i < experience.length; i++) {%>
-	<tr class="content-outside">
-		<td class="title-1-160" valign="top"><%:=experience[i].from%> - <%:=experience[i].to%></td>
-		<td class="title-1"><%:=experience[i].project%> / <span class="content"><%:=experience[i].position%></span>
-			<div class="content-inside">
-				<span class="title-1"><%:=experience[i].intro%> / </span><span class="content"><%:=experience[i].work%></span><br><span class="content"><%:=experience[i].detail%></span>
-			</div>
-		</td>
-	</tr>
-    <%}%>
-</table>
+## <span class="block-accent">04.</span><span class="title"><u>Blog</u></span>

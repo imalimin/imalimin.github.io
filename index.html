@@ -90,7 +90,7 @@
 				$('#content').html(html);
 			}
 			function loadPublicTemplate(templateStr, json) {
-				$.get("./extra_alimin.md", function(text, status) {
+				$.get("./assets/private/extra_alimin.md", function(text, status) {
 					show(templateStr + "\n" + text, json);
 				});
 			}
@@ -101,7 +101,7 @@
 			}
 
 			$.get("./bin/alimin_public.json", function(json, status) {
-				loadTemplate("./assets/homepage.bin", json);
+				loadTemplate("./assets/private/homepage.bin", json);
 			}, "json");
 		</script>
 	</body>
