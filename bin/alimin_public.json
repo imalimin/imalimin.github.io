@@ -47,7 +47,7 @@
 		"info": "熟悉渲染流程，熟悉Shader/FBO/PBO/VBO的使用，理解MVP的实现原理，对性能优化有一定经验"
 	}, {
 		"type": "C/C++",
-		"info": "3年经验，熟悉语法，熟悉STL常见接口的使用，理解多态"
+		"info": "3年经验，熟悉语法，熟悉STL的基础应用，理解多态"
 	}, {
 		"type": "Android",
 		"info": "5年Android开发经验，熟悉NDK，熟悉Cmake进行交叉编译的实现流程"
